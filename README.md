@@ -60,10 +60,10 @@ POST /api/tasks
 ]
 ```
 
-#### Criar um Anel
+#### Busque uma única tarefa pelo seu ID.
 
 ```http
-POST /api/rings
+GET /api/tasks/${id}
 ```
 
 #### Atualize o status de conclusão de uma tarefa. Espera um corpo JSON com a seguinte estrutura:
@@ -79,3 +79,20 @@ POST /api/rings
 ```http
 POST /api/rings
 ```
+
+#### Deletar uma tarefa pelo seu ID.
+
+```http
+DELETE /api/tasks/${id}
+```
+
+### Tecnologias Usadas
+
+- Next.js: Framework para construir aplicações React.
+- React: Biblioteca para construir interfaces de usuário.
+- TypeScript: Superconjunto do JavaScript para tipagem estática.
+- SASS: Pré-processador CSS para estilização.
+- UUID: Biblioteca para gerar identificadores únicos.
+- Bcrypt: Biblioteca para hashing de senhas.
+- JsonWebToken: Biblioteca para gerenciamento de tokens JWT.
+- dotenv: Módulo para carregar variáveis de ambiente.
