@@ -93,6 +93,7 @@ export default function Home() {
   const deleteTask = async (id: string) => {
     if (!id) {
       setError("Tarefa not found");
+      return;
     }
 
     setLoading(true);
@@ -105,12 +106,18 @@ export default function Home() {
           "Content-Type": "application/json",
         },
       });
+
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
+
       setTasks((prevTasks) => prevTasks.filter((task) => task.id !== id));
+
+      handleCloseModal();
     } catch (error) {
       setError((error as Error).message || "Erro ao deletar a tarefa");
+    } finally {
+      setLoading(false);
     }
   };
 

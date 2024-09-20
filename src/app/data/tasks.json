@@ -1,17 +1,22 @@
 [
   {
-    "id": "5349f11a-4219-4385-b963-16d497dcbace",
-    "title": "Anderson 1",
-    "isCompleted": true
-  },
-  {
-    "id": "04ad8061-0379-4adf-ad30-b6986098dfbb",
+    "id": "5dd0df4f-ceaa-460f-b789-7fd9fe1c283d",
     "title": "Lavar as mãos",
-    "isCompleted": true
+    "isCompleted": false
   },
   {
-    "id": "6f34702e-6403-4837-9fbc-cffd1714f40c",
-    "title": "21",
+    "id": "c4f9ce32-d411-454a-9600-5b29c2a5f600",
+    "title": "Fazer um bolo",
     "isCompleted": false
+  },
+  {
+    "id": "3bd3fb6e-edf9-4bae-ad37-dda922eee136",
+    "title": "Lavar a louça",
+    "isCompleted": false
+  },
+  {
+    "id": "773ca1b5-71d0-4054-a89b-74ca1a7ae3ed",
+    "title": "Levar o lixo para fora",
+    "isCompleted": true
   }
 ]
