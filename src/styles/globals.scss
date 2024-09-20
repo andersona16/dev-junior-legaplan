@@ -1,0 +1,39 @@
+html,
+body {
+  margin: 0;
+  background: rgba(255, 255, 255, 1);
+  overflow-x: hidden;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+
+  font-family: "Inter Tight", sans-serif;
+}
+
+input,
+select,
+textarea {
+  font-family: "Inter Tight", sans-serif;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Inter Tight", sans-serif;
+
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

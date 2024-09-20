@@ -1,0 +1,25 @@
+.customButton {
+  background: linear-gradient(90deg, #0796d3 0%, #53c0f0 68.65%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 16px 24px 16px 24px;
+  transition: background 0.3s;
+
+  width: 100%;
+
+  &:hover {
+    background: linear-gradient(90deg, #0590c0 0%, #49a9e0 68.65%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    background: gray;
+    cursor: not-allowed;
+  }
+}

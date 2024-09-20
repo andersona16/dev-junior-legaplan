@@ -1,0 +1,62 @@
+.container-header {
+  padding: 24px 56px;
+  margin: 0 auto;
+  max-width: 1328px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+
+  position: relative;
+
+  > h1 {
+    font-size: 24px;
+    line-height: 29.04px;
+    letter-spacing: -0.02em;
+    color: #000000;
+  }
+
+  > span {
+    font-size: 16px;
+    line-height: 19.36px;
+    letter-spacing: -0.02em;
+    color: #0000008a;
+  }
+}
+
+.container-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 56px;
+  right: 56px;
+  height: 1px;
+  background: rgba(215, 221, 233, 1);
+}
+
+@media screen and (max-width: 425px) {
+  .container-header {
+    flex-direction: column;
+    align-items: start;
+
+    gap: 8px;
+
+    padding: 24px;
+
+    > h1,
+    span {
+      font-size: 16px;
+    }
+  }
+
+  .container-header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 26px;
+    right: 26px;
+    height: 1px;
+    background: rgba(215, 221, 233, 1);
+  }
+}
