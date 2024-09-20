@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### Teste Dev Junior - Legaplan
 
-## Getting Started
+### Funcionalidades
 
-First, run the development server:
+- Criar, listar, atualizar e deletar tarefas.
+- Armazenamento persistente de tarefas usando arquivos JSON.
+- Interface amigável com spinners de carregamento.
+
+### Pré-requisitos
+
+Certifique-se de que você tenha o seguinte instalado:
+
+- Utilizei o node v20.15.1
+- [Node.js](https://nodejs.org/) (v14 ou superior)
+- [npm](https://www.npmjs.com/) (vem com o Node.js)
+
+### Instalação
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+git clone  https://github.com/andersona16/dev-junior-legaplan.git
+
+yarn install
+
+ou
+
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Executando a Aplicaçã
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+npm run dev
 
-## Learn More
+ ou
 
-To learn more about Next.js, take a look at the following resources:
+yarn dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Endpoints da API
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### Busque todas as tarefas.
 
-## Deploy on Vercel
+```http
+GET /api/tasks
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Crie uma nova tarefa. Espera um corpo JSON com a seguinte estrutura:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```http
+POST /api/tasks
+```
+
+```json
+[
+  {
+    "title": "Título da tarefa"
+  }
+]
+```
+
+#### Criar um Anel
+
+```http
+POST /api/rings
+```
+
+#### Atualize o status de conclusão de uma tarefa. Espera um corpo JSON com a seguinte estrutura:
+
+```json
+[
+  {
+    "isCompleted": true
+  }
+]
+```
+
+```http
+POST /api/rings
+```
